@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gandip $GANDI_APIKEY $URL `echo $SUBDOMAINS | sed 's/,/ /g'`

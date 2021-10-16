@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+echo "**** Installing gandip ****"
+pip3 install gandip
+
+if [ ! -f /etc/periodic/hourly/gandi-dyndns ]; then
+    echo "**** Installing periodic script ****"
+    cp /defaults/gandi-dyndns/run /etc/periodic/hourly/gandi-dyndns
+    chmod a+x /etc/periodic/hourly/gandi-dyndns
+fi
