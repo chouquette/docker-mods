@@ -1,6 +1,6 @@
 FROM scratch
 
-LABEL maintainer="aptalca"
+LABEL maintainer="chouquette"
 
 # copy local files
 COPY root/ /

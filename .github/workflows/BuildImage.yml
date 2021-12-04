@@ -3,9 +3,9 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "linuxserver/mods" #don't modify
+  ENDPOINT: "chouquette/docker-mods" #don't modify
   BASEIMAGE: "papermerge" #replace
-  MODNAME: "multilangocr" #replace
+  MODNAME: "hplip" #replace
 
 jobs:
   build:
